@@ -7,6 +7,14 @@ body {
   padding: 0;
 }
 
+.skip-link {
+  display: inline-block;
+  background-color: #ffffff;
+  color: #1a365d;
+  padding: 8px 12px;
+  font-weight: bold;
+}
+
 header {
   background-color: #1a365d;
   color: #ffffff;
@@ -16,18 +24,52 @@ header {
 nav {
   background-color: #2d3748;
   padding: 10px;
+  display: inline-block;
+  width: 80%;
+  vertical-align: middle;
 }
 
 nav a {
   color: #ffffff;
   text-decoration: none;
   font-weight: bold;
+  margin-right: 20px;
 }
+
+nav img {
+  width: 10%;
+}
+
+/*
+li {
+  display: inline-block;
+  width: 180px;
+}
+*/
 
 main {
   background-color: #ffffff;
   font-size: 18px;
   padding: 20px;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 40% 40%;
+  justify-content: space-around;
+  align-items: center;
+  row-gap: 20px;
+}
+
+.grid img {
+  width: 100%;
+}
+
+.flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  row-gap: 20px;
 }
 
 footer {
@@ -39,11 +81,6 @@ footer {
 
 footer a {
   color: #90cdf4;
-}
-
-li {
-  display: inline-block;
-  width: 180px;
 }
 
 h1 {
