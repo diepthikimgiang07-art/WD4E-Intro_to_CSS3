@@ -1,0 +1,160 @@
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #1f2937;
+  background-color: #f3f4f6;
+  margin: 0;
+  padding: 0;
+}
+
+/* Step 4: Skip to Main Content chi hien khi focus (bam phim Tab) */
+.skip-link {
+  position: absolute;
+  top: -50px;
+  left: 10px;
+  background-color: #1e3a8a;
+  color: #ffffff;
+  padding: 10px 16px;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 0 0 8px 8px;
+  z-index: 100;
+  transition: top 0.2s ease;
+}
+
+.skip-link:focus {
+  top: 0;
+}
+
+header {
+  background-color: #1e3a8a;
+  color: #ffffff;
+  padding: 25px 20px;
+  text-align: center;
+}
+
+h1 {
+  margin: 20px 0 5px;
+  font-size: 2rem;
+  letter-spacing: 0.5px;
+}
+
+/* Step 5 & Step 8: Navigation styled attractively with Flex */
+nav {
+  background-color: #172554;
+  padding: 12px 20px;
+  border-radius: 10px;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+nav ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+/* Step 9: Hover pseudo-class with transition */
+nav a {
+  color: #ffffff;
+  text-decoration: none;
+  font-weight: bold;
+  padding: 8px 18px;
+  border-radius: 6px;
+  display: inline-block;
+  transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+nav a:hover,
+nav a.active {
+  background-color: #2563eb;
+  transform: translateY(-2px);
+}
+
+main {
+  max-width: 1050px;
+  margin: 25px auto;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 12px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+/* Step 6: Box model styling for all images */
+img {
+  width: 100%;
+  height: auto;
+  display: block;
+  box-sizing: border-box;
+  border: 3px solid #1e3a8a;
+  padding: 6px;
+  border-radius: 12px;
+  background-color: #eff6ff;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+/* Step 9: Hover effect on images */
+img:hover {
+  transform: scale(1.03);
+  box-shadow: 0 8px 18px rgba(30, 58, 138, 0.25);
+}
+
+/* Step 7: Grid layouts (at least 2 columns) */
+.intro-grid {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 30px;
+  align-items: center;
+}
+
+.gallery-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 24px;
+  margin-top: 20px;
+}
+
+/* Step 10: nth-child selector styling alternating images differently */
+.gallery-grid img:nth-child(odd) {
+  border-radius: 30px 6px 30px 6px;
+  border-color: #1e3a8a;
+}
+
+.gallery-grid img:nth-child(even) {
+  border-radius: 6px 30px 6px 30px;
+  border-color: #0f766e;
+}
+
+/* Step 8: Flex layout on destinations page */
+.destinations-flex {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  gap: 25px;
+}
+
+.card {
+  flex: 1 1 45%;
+  background-color: #f8fafc;
+  padding: 20px;
+  border-radius: 12px;
+  border: 1px solid #cbd5e1;
+}
+
+.card h2 {
+  color: #1e3a8a;
+  margin-top: 15px;
+}
+
+footer {
+  background-color: #111827;
+  color: #f9fafb;
+  text-align: center;
+  padding: 18px;
+  margin-top: 40px;
+}
